@@ -1,0 +1,24 @@
+.grid {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.tableWrapper {
+    overflow: auto;
+    margin: 8px 0;
+}
+
+.tableWrapper thead {
+    padding: 8px 0;
+    position: sticky;
+    top: 0;
+    background: rgb(var(--background-end-rgb));
+}
+
+.tableWrapper th, .tableWrapper td {
+    min-width: 70px;
+    vertical-align: top;
+    text-align: center;
+}

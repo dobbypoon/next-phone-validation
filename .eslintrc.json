@@ -1,3 +1,27 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "next/core-web-vitals",
+    "airbnb",
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "plugin:prettier/recommended",
+    "plugin:cypress/recommended"
+  ],
+  "ignorePatterns": ["tailwind.config.js", "postcss.config.js"],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": [
+      2,
+      {
+        "singleQuote": true,
+        "semi": false,
+        "trailingComma": "all"
+      }
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "import/no-extraneous-dependencies": 0,
+    "import/prefer-default-export": 0
+  }
 }
